@@ -221,7 +221,7 @@ export default function Hero() {
                 <motion.div
                   className="absolute -top-4 -right-4 glass-dark rounded-2xl p-3 shadow-xl border border-[#C9A84C]/30"
                   animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' as const }}
                 >
                   <div className="text-center">
                     <p className="text-[#E8CC7A] font-black text-2xl">+15</p>
@@ -233,7 +233,7 @@ export default function Hero() {
                 <motion.div
                   className="absolute -bottom-4 -left-4 glass-dark rounded-2xl p-3 shadow-xl border border-blue-500/30"
                   animate={{ y: [0, 8, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' as const, delay: 1.5 }}
                 >
                   <div className="flex items-center gap-1">
                     <Star size={16} className="text-yellow-400 fill-yellow-400" />

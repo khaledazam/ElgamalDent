@@ -47,7 +47,7 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
+        transition={{ duration: 0.6, ease: 'easeOut' as const }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? 'glass-white dark:glass-dark shadow-xl py-2'
@@ -139,7 +139,7 @@ export default function Navbar() {
             initial={{ opacity: 0, x: 300 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 300 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
+            transition={{ duration: 0.3, ease: 'easeOut' as const }}
             className="fixed top-0 right-0 h-full w-80 z-40 glass-dark shadow-2xl"
           >
             <div className="flex flex-col pt-24 px-6 gap-2">
